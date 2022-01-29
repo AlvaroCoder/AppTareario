@@ -175,7 +175,7 @@ public class Tarea extends JPanel implements ActionListener{
         }
         if (!descripcionTarea.equals("")) {
             int widthDescripcion = 300, heigthDescripcion = 30;
-            Font fontDescripcion = new Font("Arial",Font.PLAIN, 10);
+            Font fontDescripcion = new Font("Arial",Font.PLAIN, 12);
             
             labelDescripcion.setText(descripcionTarea);
             labelDescripcion.setFont(fontDescripcion);
@@ -250,8 +250,8 @@ public class Tarea extends JPanel implements ActionListener{
             
             labelEstado.setText("No empezado");
             etiqueta.setBackground(Color.decode("#FCBF49"));
-            panelSup.setBackground(Color.decode("#FCBF49"));
-            panelInf.setBackground(Color.decode("#FCBF49"));
+            panelSup.setBackground(Color.decode("#FEF6CD"));
+            panelInf.setBackground(Color.decode("#FEF6CD"));
             
             btnStop.setVisible(false);
             btnPlay.setVisible(true);

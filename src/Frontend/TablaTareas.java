@@ -77,27 +77,31 @@ public class TablaTareas extends JPanel{
             }
             lastIdTarea = idTarea;
             });
-        System.out.println("lastIdTarea = " + lastIdTarea);
         panel.setSize(700,heigth);
         panel.updateUI();
     }
     public void agregarTarea(){
-        HashMap hash = conexion.traerTarea((lastIdTarea+1));
-        int idTarea = Integer.parseInt((String)hash.get(("idTarea")));
-        String nombreTarea = (String)hash.get("nombre");
-        int estado = Integer.parseInt((String)hash.get("estado"));
-        String descripcion = (String)hash.get("descripcion");
-        Tarea task = new Tarea(idTarea,nombreTarea,estado,descripcion);
-        task.setTablaTareas(this);
-        if ("".equals(descripcion)) {
-            heigth+=80;
+        if (lastIdTarea > 0) {
+            lastIdTarea++;
+            HashMap hash = conexion.traerTarea((lastIdTarea));
+            int idTarea = Integer.parseInt((String)hash.get(("idTarea")));
+            String nombreTarea = (String)hash.get("nombre");
+            int estado = Integer.parseInt((String)hash.get("estado"));
+            String descripcion = (String)hash.get("descripcion");
+            Tarea task = new Tarea(idTarea,nombreTarea,estado,descripcion);
+            task.setTablaTareas(this);
+            if ("".equals(descripcion)) {
+                heigth+=80;
+            }else{
+                heigth+=150;
+            }
+            gbcPanel.gridy = contador++;
+            panel.add(task,gbcPanel);
+            panel.setSize(700,heigth);
+            panel.updateUI();
         }else{
-            heigth+=150;
+            mostrarTareas();
         }
-        gbcPanel.gridy = contador++;
-        panel.add(task,gbcPanel);
-        panel.setSize(700,heigth);
-        panel.updateUI();
     }
     public void actualizarBarra(){
         contenedor.actualizar();
