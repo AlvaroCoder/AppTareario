@@ -3,6 +3,12 @@
   <img src="https://raw.githubusercontent.com/AlvaroCoder/AppTareario/master/src/Imagenes/BannerAplicaciondeTareas%20.png">
 </p>
 
+# Demostración
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AlvaroCoder/AppTareario/master/src/Imagenes/GifAppTareas.gif">
+</p>
+
 ## Descripcion
 Aplicación de escritorio usando [JAVAX SWING](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html) y [MYSQL](https://www.mysql.com/). Sirve para que organices las tareas del día. Puedes guardar tus tareas,tantas como quieras, cambiar de estado y marcarlas como hechas o "terminadas".
 
