@@ -1,6 +1,7 @@
 ## App de Tareas
-
-
+<p align="center">
+  <img src="src/Imagenes/BannerAplicaiondeTareas.png">
+</p>
 
 ## Description
 Aplicación de escritorio usando [JAVAX SWING](https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html). Sirve para que organices las tareas del día.
@@ -11,3 +12,10 @@ Para usar el código es necesario que tengas [MYSQL](https://www.mysql.com/) ins
 [WORKBENCH](https://www.mysql.com/products/workbench/) pero puedes usar cualquiera. 
 Además deberas crear una base de datos llamada "bd_tareas" , puedes usar <code>CREATE DATABASE bd_tarea;</code>
 luego crear una tabla llamada tareas.
+<p>
+  <code>
+    CREATE TABLE tareas (
+      
+    );
+  </code>
+</p>
