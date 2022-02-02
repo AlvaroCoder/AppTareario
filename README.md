@@ -15,8 +15,8 @@ Aplicación de escritorio usando [JAVAX SWING](https://docs.oracle.com/javase/7/
 ## Prerequisitos de uso del código
 Para usar el código es necesario que tengas [MYSQL](https://www.mysql.com/) instalado, puedes usar cualquier interfaz que te permita manejar las bases de datos. En mi caso use 
 [WORKBENCH](https://www.mysql.com/products/workbench/) pero puedes usar cualquiera. 
-Además deberas crear una base de datos llamada "bd_tareas" , puedes usar <code>CREATE DATABASE bd_tarea;</code>
-Luego crear una tabla de tareas usando:
+Además deberas crear una base de datos llamada "bd_tareas" , puedes copiar <code>CREATE DATABASE bd_tarea;</code>, para crear la base de datos.
+Luego debes crear una tabla "tareas", usando el código:
 ```
     CREATE TABLE tareas(
       idtareas INT NOT NULL AUTO_INCREMENT,
@@ -30,3 +30,4 @@ Luego crear una tabla de tareas usando:
     );
 ```
 Ahora ya puedes usar mi código 😊.
+Espero puedas entender mi código :)
